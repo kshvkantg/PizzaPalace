@@ -1,6 +1,7 @@
 package com.nextgenlabs.pizzapalace.Ui.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.nextgenlabs.pizzapalace.R;
+import com.nextgenlabs.pizzapalace.Ui.Activity.ItemActivity;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -32,11 +34,13 @@ public class HomeActivityItemViewAdapter extends RecyclerView.Adapter<HomeActivi
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final ItemViewHolder holder, int position) {
         holder.constraintLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context,"Item Clicked",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(context,"Item Clicked",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(context, ItemActivity.class);
+                context.startActivity(intent);
             }
         });
         holder.itemName.setText(itemName);

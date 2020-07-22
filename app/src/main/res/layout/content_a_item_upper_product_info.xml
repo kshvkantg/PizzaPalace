@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/aItem_small"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/a_item_buttons"
+        android:elevation="4dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="S"
+        android:textAppearance="@style/aItem_sizeBtn"
+        app:layout_constraintStart_toStartOf="@+id/aItem_ProductImage"
+        app:layout_constraintTop_toBottomOf="@+id/aItem_ProductImage" />
+
+    <Button
+        android:id="@+id/aItem_cartBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/a_item_buttons"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/aItem_backButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/a_item_buttons"
+        android:elevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/aItem_Medium"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_weight="1"
+        android:background="@drawable/a_item_buttons"
+        android:elevation="4dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="M"
+        android:textAppearance="@style/aItem_sizeBtn"
+        app:layout_constraintEnd_toStartOf="@+id/aItem_Large"
+        app:layout_constraintStart_toEndOf="@+id/aItem_small"
+        app:layout_constraintTop_toBottomOf="@+id/aItem_ProductImage" />
+
+    <Button
+        android:id="@+id/aItem_Large"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_weight="1"
+        android:background="@drawable/a_item_buttons"
+        android:elevation="4dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="L"
+        android:textAppearance="@style/aItem_sizeBtn"
+        app:layout_constraintEnd_toEndOf="@+id/aItem_ProductImage"
+        app:layout_constraintTop_toBottomOf="@+id/aItem_ProductImage" />
+
+
+    <ImageView
+        android:id="@+id/aItem_ProductImage"
+        android:layout_width="335dp"
+        android:layout_height="294dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aItem_productDetails"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/aItemAddButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintStart_toStartOf="@+id/aItem_small"
+        app:layout_constraintTop_toTopOf="@+id/aItemItemCount"
+        android:background="@drawable/a_item_add_sub_button" />
+
+    <ImageView
+        android:id="@+id/aItemSubButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/aItem_Large"
+        app:layout_constraintTop_toTopOf="@+id/aItemItemCount"
+        android:background="@drawable/a_item_add_sub_button" />
+
+    <TextView
+        android:id="@+id/aItem_ProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="Bacon Burger"
+        android:textAppearance="@style/aItem_ProductName"
+        app:layout_constraintEnd_toEndOf="@+id/aItem_cartBtn"
+        app:layout_constraintStart_toStartOf="@+id/aItem_backButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/aItem_productDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/aItem_description"
+        android:textAppearance="@style/aItem_ProductDescription"
+        app:layout_constraintEnd_toEndOf="@+id/aItem_ProductName"
+        app:layout_constraintStart_toStartOf="@+id/aItem_ProductName"
+        app:layout_constraintTop_toBottomOf="@+id/aItem_ProductName" />
+
+    <TextView
+        android:id="@+id/aItemItemCount"
+        android:layout_width="wrap_content"
+        android:layout_height= "wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="2"
+        android:fontFamily="@font/open_sans_bold"
+        android:textAppearance="@style/aItem_itemCount"
+        app:layout_constraintEnd_toStartOf="@+id/aItemSubButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/aItemAddButton"
+        app:layout_constraintTop_toBottomOf="@+id/aItem_Medium" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
