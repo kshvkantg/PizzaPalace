@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "193881307198",
+    "firebase_url": "https://pizzapalace-ed74b.firebaseio.com",
+    "project_id": "pizzapalace-ed74b",
+    "storage_bucket": "pizzapalace-ed74b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193881307198:android:a001adeae3c2d67cf8f96f",
+        "android_client_info": {
+          "package_name": "com.nextgenlabs.pizzapalace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193881307198-d7097kejcaq8olgt7jlrqalv3le6sg6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUHTeFj-LGYz0QoPXQd8Xcq-HkfTbHMwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "193881307198-d7097kejcaq8olgt7jlrqalv3le6sg6f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
