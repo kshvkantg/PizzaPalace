@@ -29,7 +29,7 @@ public class ItemViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         RecyclerView.ViewHolder holder = null;
         if (viewType == 0){
-            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.content_a_home_upper_view, parent, false);
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.content_a_item_upper_product_info, parent, false);
             holder = new UpperViewHolder(view);
         }
         else if(viewType == 1){
@@ -63,8 +63,10 @@ public class ItemViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         TextView productHeading,productDescription;
         ImageView itemImage;
         Button smallSizeBtn,mediumSizeBtn,largeSizeBtn;
-        Button addItem,subItem;
+        ImageView addItem,subItem;
         TextView itemCount;
+        TextView price,itemPrice;
+        Button addToCartButton;
 
         public UpperViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -79,6 +81,9 @@ public class ItemViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             addItem = itemView.findViewById(R.id.aItemAddButton);
             subItem = itemView.findViewById(R.id.aItemSubButton);
             itemCount = itemView.findViewById(R.id.aItemItemCount);
+            price = itemView.findViewById(R.id.aItem_Price);
+            itemPrice = itemView.findViewById(R.id.aItem_ProductPrice);
+            addToCartButton = itemImage.findViewById(R.id.aItem_AddToCrtBtn);
 
         }
     }

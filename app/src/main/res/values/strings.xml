@@ -9,8 +9,4 @@
     <string name="sample_review">This cord alert strip is the perfect size for my travel trailer cord. I’d tried another
     size first, but my thick cord would’t fit into it. This one  works and helps to keep
         the cord flat in my driveway so no one trips over.</string>
-    <String name ="sample_review">This cord alert strip is the perfect size for my travel trailer \n cord. I’d tried another
-        size first, but my thick cord would’t \n fit into it. This one works and helps to keep
-        the cord flat in \n my driveway so no one trips over it. </String>
-
 </resources>
